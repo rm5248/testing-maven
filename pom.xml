@@ -15,4 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+<distributionManagement>
+    <repository>
+        <id>central-artifactory</id>
+        <name>my-releases</name>
+        <url>http://localhost:8081/artifactory/ext-release-local</url>
+    </repository>
+</distributionManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/rm5248/testing-maven.git</connection>
+        <developerConnection>scm:git:git@github.com:https://github.com/rm5248/testing-maven.git </developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 </project>
